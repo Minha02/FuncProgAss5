@@ -1,8 +1,8 @@
 case class Book(title: String, author: String, isbn: String)
 
-Object LibraryManager{
+object LibraryManager{
     var library:Set[Book] = Set(
-        Book("123","Autor1","978-0-06-112008-4")
+        Book("123","Autor1","978-0-06-112008-4"),
         Book("ABCD", "Author2", "978-0-452-28423-4"),
         Book("XYZ", "Author3", "978-0-7432-7356-5")
     )
