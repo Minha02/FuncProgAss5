@@ -4,12 +4,12 @@ object Fibonnaci{
         else fibonacciRecursive(n-1) + fibonacciRecursive(n-2)
     }
 
-    def fibonnaciIterative(n: Int): LIst[Int] ={
+    def fibonnacciIterative(n: Int): List[Int] ={
         require(n>=0, "Number of terms must me non-negative")
         if(n==0) List(0)
         else if (n==1) List(0,1)
         else{
-            vaR fibs: List[Int] = List(0,1)
+            var fibs: List[Int] = List(0,1)
             for(i<- 2 until n){
                 fibs = fibs :+ (fibs(i-1) + fibs(i-2))
             }
@@ -18,8 +18,8 @@ object Fibonnaci{
     }
 
     def printFibonacci(n: Int): Unit ={
-        val fibs = fibonnaciIterative(n)
-        println(s"THe first $n Fibonacci numbers are:")
+        val fibs = fibonnacciIterative(n)
+        println(s"The first $n Fibonacci numbers are:")
         fibs.foreach(println)
     }
 
