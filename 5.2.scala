@@ -32,7 +32,6 @@ Object LibraryManager{
     }
 
     def main(args: Array[String]): Unit = {
-    // Example interaction
     println("Initial Library Collection:")
     displayLibrary()
 
